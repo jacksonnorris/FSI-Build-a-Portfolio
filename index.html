@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width" />
     <title>My Portfolio</title>
     <link rel ="stylesheet" type="text/css" href=css/styles.css>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=B612&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -72,6 +78,9 @@
         src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs-media-cache-ak0.pinimg.com%2Foriginals%2F2d%2F8e%2Fe8%2F2d8ee815146390d567706f2c7b5c2916.gif&f=1&nofb=1"
       />
     </div>
+    <div>
+      <button id="crazyButton" onclick="goCrazy()">Click to see magic</button>
+    </div>
   </body>
   <script type="text/javascript">
     function clickMe() {
@@ -80,6 +89,12 @@
     function changeColor() {
       var selectObject = document.getElementById("selectColor");
       $("body").css("background-color", selectObject.value);
+    }
+    function goCrazy() {
+      $("#crazyButton").css(
+        "background-color",
+        "#" + (0x1000000 + Math.random() * 0xffffff).toString(16).substr(1, 6)
+      );
     }
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

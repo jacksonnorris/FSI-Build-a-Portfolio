@@ -1,6 +1,7 @@
 body {
   text-align: center;
   background-color: lightgrey;
+  font-family: "B612", sans-serif;
 }
 div {
   padding: 0 20%;
@@ -29,4 +30,13 @@ li {
 }
 img {
   max-width: 80%;
+}
+button {
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: bold;
+  border: 2px solid;
+}
+button:hover {
+  cursor: pointer;
 }
