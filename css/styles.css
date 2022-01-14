@@ -1,11 +1,18 @@
 * {
   text-align: center;
 }
-
 div {
-  padding: 10% 10%;
+  padding: 0 20%;
 }
-
 a {
   color: blue;
+}
+h1 {
+  color: black;
+}
+h2 {
+  color: black;
+}
+h3 {
+  color: black;
 }
