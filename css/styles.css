@@ -27,3 +27,6 @@ ul {
 li {
   margin-left: -35px;
 }
+img {
+  max-width: 80%;
+}
