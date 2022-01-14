@@ -49,7 +49,26 @@
         <h3>Contact Me</h3>
         <p>email: <a href="mailto:jack@jackswebsite.com">jack@jackswebsite.com</a></p>
         <p>phone: 704-555-JACK</p>
+        <button class="buttonClass" onclick=clickMe()>Click me!</button>
+  </div>
+  <div style="padding-top: 20px;">
+        <label for="selectColor">Please choose a color</label>
+        <select id="selectColor" onchange=changeColor()>
+          <option value="lightgrey">Light Grey</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+  </div>
   </div>
 </body>
-
+<script type="text/javascript">
+function clickMe() {
+  alert("I literally do nothing");
+}
+function changeColor() {
+  var selectObject = document.getElementById("selectColor");
+  $("body").css('background-color', selectObject.value);
+}
+</script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </html>
